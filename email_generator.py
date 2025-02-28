@@ -14,7 +14,7 @@ def generate_sales_email(name, product, customer_behavior):
 
     client = openai.OpenAI()
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",  # Change to "gpt-4" if you have access
+        model="gpt-3.5-turbo",  
         messages=[{"role": "system", "content": prompt}]
     )
 
